@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv = "X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script> </script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/demo.png" class="logo">
+            <ul>
+                <li><a href="#">Home </a></li>
+                <li><a href="#">About </a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Portfolio </a></li>
+                <li><a href="#">Contact </a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Software Engineer</p>
+            <h1>Hi, I'm <span>Medha Gitay</span> <br>from Charlotte, North Carolina.</h1>
+        </div>
+    </div>
+    </div>
+<!--------about------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                <img src="images/demo2.jpg" alt="image not found">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title"> About me</h1>
+                    <p>I am currently persuing my Masters in Computer Science with a 
+                        concentration in Data Science. I am currently working as a 
+                        graduate Teaching assistant for the course Algorithms and Data 
+                        Structures. In the last semester of my undergrad I had the opportunity 
+                        to work as a softwarev engineer Intern in Seneca Global. During my 
+                        internship I worked on building an application called the good reads. 
+                        I mainly worked on React Native and PostGreSQL.  </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('educations')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li> <span> IU</span><br>Design</li>
+                                <li> <span> IU</span><br>Design</li>
+                                <li> <span> IU</span><br>Design</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li> <span> Graduate Teaching Assistant</span><br>University of North Carolina at Charlotte</li>
+                                <li> <span> Software Engineering Intern</span><br>Seneca Global</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="educations" >
+                            <ul>
+                                <li> <span> University of North Carolina at Charlotte</span><br>Master of Science in Computer Science (GPA: 4.0/4.0)
+
+                                </li>
+                                <li> <span> Jawaharlal Nehru Technological University</span><br>Bachelor of Technology in Information Technology (GPA: 3.8/4.0)</li>
+                                <li> <span> IU</span><br>Design</li>
+                            </ul>
+                        </div>
+                </div>
+            
+        </div>
+
+    </div>
+<!---------services--------->
+<div id="services">
+    <div class=""container>
+        <h1 class="sub-title">My projects</h1>
+        <div class="services-list">
+            <div>
+                <h2>inventory management</h2>
+                <p>Developed a Web Application to manage and track inventory items. Application supported entry of an inventory item, generating QR code for it, scanning item QR code to fetch the item details, and exposed an API to serve the inventory data. Developed a public API through which the current inventory status can be tracked. Performed data analysis on the inventory data as well to generate dashboard reports.</p>
+                    <a href="#">learn more</a>
+            </div>
+            <div>
+                <h2>Trade Arts </h2>
+                <p>Developed an interactive web application with NodeJs enabling artists to create, purchase and sell works of art. Conformed MVC architecture in JavaScript for user authentication, validation, session management. Implemented the add to cart and exchanging own art with other artists functionalities utilizing Mongo Database. Created Rest APIs for data sharing between application components and for maintaining basic routing with ExpressJs.</p>
+                    <a href="#">learn more</a>
+            </div>
+            <div>
+                <h2>Web Page Hosting in Docker Container Using AWS </h2>
+                <p>Designed and deployed web pages in Docker containers using AWS, ensuring high availability and scalability of the web hosting infrastructure. Implemented this using Docker, and AWS services such as EC2 for AMIs and Load Balancers, ECR, Route53, ACM. Monitored and analyzed web page hosting metrics using AWS tools such as CloudWatch, Auto Scaling to optimize
+                    performance, cost and improving the efficiency of the hosted web pages.</p>
+                    <a href="#">learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+</body>
+</html>
