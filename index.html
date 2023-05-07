@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script> </script>
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"> </script>
 </head>
 <body>
 <div id="header">
@@ -78,27 +78,85 @@
 <!---------services--------->
 <div id="services">
     <div class=""container>
-        <h1 class="sub-title">My projects</h1>
+        <h1 class="sub-title">My Experience</h1>
         <div class="services-list">
             <div>
-                <h2>inventory management</h2>
-                <p>Developed a Web Application to manage and track inventory items. Application supported entry of an inventory item, generating QR code for it, scanning item QR code to fetch the item details, and exposed an API to serve the inventory data. Developed a public API through which the current inventory status can be tracked. Performed data analysis on the inventory data as well to generate dashboard reports.</p>
-                    <a href="#">learn more</a>
+                <i class="fa-solid fa-user-graduate"></i>
+                <h2>Graduate Teaching Assistant</h2>
+                <p>University of North Carolina at Charlotte</p><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
             </div>
             <div>
-                <h2>Trade Arts </h2>
-                <p>Developed an interactive web application with NodeJs enabling artists to create, purchase and sell works of art. Conformed MVC architecture in JavaScript for user authentication, validation, session management. Implemented the add to cart and exchanging own art with other artists functionalities utilizing Mongo Database. Created Rest APIs for data sharing between application components and for maintaining basic routing with ExpressJs.</p>
-                    <a href="#">learn more</a>
+                <i class="fa-solid fa-code"></i>
+                <h2>Software Engineering Intern</h2>
+                <p>Seneca Global</p><br>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
             </div>
-            <div>
-                <h2>Web Page Hosting in Docker Container Using AWS </h2>
-                <p>Designed and deployed web pages in Docker containers using AWS, ensuring high availability and scalability of the web hosting infrastructure. Implemented this using Docker, and AWS services such as EC2 for AMIs and Load Balancers, ECR, Route53, ACM. Monitored and analyzed web page hosting metrics using AWS tools such as CloudWatch, Auto Scaling to optimize
-                    performance, cost and improving the efficiency of the hosted web pages.</p>
-                    <a href="#">learn more</a>
-            </div>
+
         </div>
     </div>
 </div>
+<!----portfolio----->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Inventory Management</h3>
+                    <p>invent mangmdty</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3> Trade arts</h3>
+                    <p>invent mangmdty</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3> web page hosting</h3>
+                    <p>web page hosting</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+
+    </div>
+</div>
+
+<!-----contact----->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p>medhagitay@gmail.com</p>
+                    <div class="social-icon">
+                        <a href="https://www.linkedin.com/in/medhagitay/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/medhagitay"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Name" required>
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
 
 
 <script>
