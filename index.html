@@ -13,13 +13,15 @@
     <div class="container">
         <nav>
             <img src="images/demo.png" class="logo">
-            <ul>
-                <li><a href="#">Home </a></li>
-                <li><a href="#">About </a></li>
-                <li><a href="#">Service</a></li>
-                <li><a href="#">Portfolio </a></li>
-                <li><a href="#">Contact </a></li>
+            <ul id="sidemenu">
+                <li><a href="#header">Home </a></li>
+                <li><a href="#about">About </a></li>
+                <li><a href="#services">Service</a></li>
+                <li><a href="#portfolio">Portfolio </a></li>
+                <li><a href="#contact">Contact </a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
             </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
             <p>Software Engineer</p>
@@ -36,13 +38,8 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title"> About me</h1>
-                    <p>I am currently persuing my Masters in Computer Science with a 
-                        concentration in Data Science. I am currently working as a 
-                        graduate Teaching assistant for the course Algorithms and Data 
-                        Structures. In the last semester of my undergrad I had the opportunity 
-                        to work as a softwarev engineer Intern in Seneca Global. During my 
-                        internship I worked on building an application called the good reads. 
-                        I mainly worked on React Native and PostGreSQL.  </p>
+                    <p>I am currently pursuing my Master's degree in Computer Science with a concentration in Data Science. Additionally, I am working as a graduate teaching assistant for the course Algorithms and Data Structures. 
+                        <br><br>In the last semester of my undergraduate studies, I had the opportunity to work as a software engineer intern at Seneca Global. During my internship, I worked on building an application called Good Reads, where I primarily focused on using React Native and PostGreSQL.</p>
                         <div class="tab-titles">
                             <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                             <p class="tab-links" onclick="opentab('experience')">Experience</p>
@@ -50,24 +47,25 @@
                         </div>
                         <div class="tab-contents active-tab" id="skills">
                             <ul>
-                                <li> <span> IU</span><br>Design</li>
-                                <li> <span> IU</span><br>Design</li>
-                                <li> <span> IU</span><br>Design</li>
+                                <li> <span> Languages :</span><br>Python, Java, SQL, C, C++, JavaScript, HTML, CSS</li>
+                                <li> <span> Web Technologies :</span><br>Angular, React.js, React Native, Node.js, PHP, Bootstrap, XML</li>
+                                <li> <span> Backend Frameworks :</span><br>Hibernate, Express.js</li>
+                                <li> <span> Databases :</span><br>PostgreSQL, MySQL, Oracle, MongoDB</li>
+                                <li> <span> Other Tools :</span><br>Docker, Kubernetes, Flask, MATLAB, Postman, Git, VS Code, MS Office</li>
                             </ul>
                         </div>
                         <div class="tab-contents" id="experience">
                             <ul>
-                                <li> <span> Graduate Teaching Assistant</span><br>University of North Carolina at Charlotte</li>
-                                <li> <span> Software Engineering Intern</span><br>Seneca Global</li>
+                                <li> <span> Graduate Teaching Assistant (Aug 2022 - Present)</span><br>University of North Carolina at Charlotte</li>
+                                <li> <span> Software Engineering Intern    (Feb 2021 - July 2021)</span><br>Seneca Global</li>
                             </ul>
                         </div>
                         <div class="tab-contents" id="educations" >
                             <ul>
-                                <li> <span> University of North Carolina at Charlotte</span><br>Master of Science in Computer Science (GPA: 4.0/4.0)
-
+                                <li> <span> University of North Carolina at Charlotte </span><br>Master of Science in Computer Science (GPA: 4.0/4.0)<br> Jan 2022 - Present
+                                
                                 </li>
-                                <li> <span> Jawaharlal Nehru Technological University</span><br>Bachelor of Technology in Information Technology (GPA: 3.8/4.0)</li>
-                                <li> <span> IU</span><br>Design</li>
+                                <li> <span> Jawaharlal Nehru Technological University (July 2017 - July 2021)</span><br>Bachelor of Technology in Information Technology (GPA: 3.8/4.0)<br>July 2017 - July 2021</li>
                             </ul>
                         </div>
                 </div>
@@ -83,13 +81,13 @@
             <div>
                 <i class="fa-solid fa-user-graduate"></i>
                 <h2>Graduate Teaching Assistant</h2>
-                <p>University of North Carolina at Charlotte</p><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <p>University of North Carolina at Charlotte</p><br><p><b>Course</b>: Algorithms and Data Structures</p><a href="https://www.linkedin.com/school/unc-charlotte/mycompany/verification/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
             </div>
             <div>
                 <i class="fa-solid fa-code"></i>
                 <h2>Software Engineering Intern</h2>
                 <p>Seneca Global</p><br>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a href="https://www.linkedin.com/company/senecaglobal/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
             </div>
 
         </div>
@@ -104,24 +102,28 @@
                 <img src="images/work-1.png">
                 <div class="layer">
                     <h3>Inventory Management</h3>
-                    <p>invent mangmdty</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <p>Developed a Web Application to manage and track inventory items. Application supported entry of an inventory item, generating QR code for it, scanning item QR code to fetch the item details, and exposed an API to serve the inventory data.</p>
+                    <!----<a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>--->
                 </div>
             </div>
             <div class="work">
                 <img src="images/work-2.png">
                 <div class="layer">
-                    <h3> Trade arts</h3>
-                    <p>invent mangmdty</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <h3> Trade Arts</h3>
+                    <p>Developed an interactive web application with NodeJs enabling artists to create, purchase and sell works of art.
+                        <br><br>Conformed MVC architecture in JavaScript for user authentication, validation, session management.
+                        </p>
+                    <!---<a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>--->
                 </div>
             </div>
             <div class="work">
                 <img src="images/work-3.png">
                 <div class="layer">
-                    <h3> web page hosting</h3>
-                    <p>web page hosting</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <h3> Web Page Hosting</h3>
+                    <p>Designed and deployed web pages in Docker containers using AWS, ensuring high availability and scalability of the web hosting infrastructure.
+                        <br><br>Implemented this using Docker, and AWS services such as EC2 for AMIs and Load Balancers, ECR, Route53, ACM.
+                        </p>
+                    <!---<a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>--->
                 </div>
             </div>
         </div>
@@ -134,27 +136,26 @@
 <div id="contact">
     <div class="container">
         <div class="row">
-            <div class="contact">
                 <div class="contact-left">
                     <h1 class="sub-title">Contact Me</h1>
-                    <p>medhagitay@gmail.com</p>
+                    <p><i class="fa-solid fa-paper-plane"></i>medhagitay@gmail.com</p>
                     <div class="social-icon">
                         <a href="https://www.linkedin.com/in/medhagitay/"><i class="fa-brands fa-linkedin"></i></a>
                         <a href="https://github.com/medhagitay"><i class="fa-brands fa-github"></i></a>
                     </div>
+                    <a href="images/Medha Gitay.pdf" download="" class="btn btn2">Download Resumé</a>
                 </div>
                 <div class="contact-right">
                     <form>
                         <input type="text" name="Name" placeholder="Name" required>
                         <input type="email" name="email" placeholder="Your email" required>
                         <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit">Submit</button>
+                        <button type="submit" class="btn btn2">Submit</button>
                     </form>
                 </div>
-            </div>
         </div>
     </div>
-
+    
 </div>
 
 
@@ -172,6 +173,17 @@
         }
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu= document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
     }
 </script>
 </body>
